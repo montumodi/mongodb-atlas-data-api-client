@@ -20,6 +20,8 @@
     "type": "git",
     "url": "git+https://github.com/montumodi/mongodb-atlas-data-api-client.git"
   },
+  "types": "./src/index.d.ts",
+  "typings": "./src/index.d.ts",
   "keywords": [
     "mongo",
     "mongodb",

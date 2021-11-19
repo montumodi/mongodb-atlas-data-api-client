@@ -1,11 +1,11 @@
 class Document {
 
   /**
-      * To initialize object properties
-      * @param {Object} client - The http client
-      * @param {string} baseUrl - Base url of mongodb data api
-      * @param {object} token - token used to access data lake api
-      */
+    * To initialize object properties
+    * @param {Object} client - The http client
+    * @param {string} baseUrl - Base url of mongodb data api
+    * @param {object} token - token used to access data lake api
+  */
   constructor(client, baseUrl, token) {
     this.client_ = client;
     this.baseUrl_ = baseUrl;
@@ -23,7 +23,7 @@ class Document {
    */
   async findOne(body) {
     const response = await this.client_({
-      "url": `${this.baseUrl_}/findOne`,
+      "url": `${this.baseUrl_}/action/findOne`,
       "method": "POST",
       "body": JSON.stringify(body),
       "headers": this.headers_
